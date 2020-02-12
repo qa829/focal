@@ -2,6 +2,11 @@ dist: focal
 group: dev
 language: minimal
 
+service: docker
+
 script:
 - uname -a
 - lsb_release -sc
+- docker run hello-world
+- docker ps
+- docker images
