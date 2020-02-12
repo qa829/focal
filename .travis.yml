@@ -1,0 +1,6 @@
+dist: focal
+language: ___ubuntu_2004_minimal__
+
+script:
+- uname -a
+- lsb_release -sc
