@@ -10,3 +10,4 @@ script:
 - docker run hello-world
 - docker ps
 - docker images
+- ruby -v
