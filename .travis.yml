@@ -1,6 +1,6 @@
 dist: focal
 group: dev
-language: minimal
+language: ruby
 
 service: docker
 
