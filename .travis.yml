@@ -1,6 +1,11 @@
 dist: focal
 group: dev
-language: ruby
+language: php
+
+php:
+- 7.4
+- 7.4.1
+- 7.4.2
 
 service: docker
 
@@ -11,3 +16,4 @@ script:
 - docker ps
 - docker images
 - ruby -v
+- php -v
