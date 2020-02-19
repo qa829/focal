@@ -16,4 +16,3 @@ script:
 - docker ps
 - docker images
 - ruby -v
-- php -v
