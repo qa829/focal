@@ -1,6 +1,6 @@
 dist: focal
 group: dev
-language: php
+language: ruby
 
 addons:
   artifacts:
@@ -13,6 +13,7 @@ addons:
 # #- 7.4.1
 # - 7.4.2
 
+install: skip
 service: docker
 
 script:
