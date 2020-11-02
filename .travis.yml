@@ -1,10 +1,11 @@
 dist: focal
 # group: dev
 language: ruby
+virt: lxd
 
-addons:
-  artifacts:
-    s3_region: "us-west-1" # defaults to "us-east-1"
+# addons:
+#   artifacts:
+#     s3_region: "us-west-1" # defaults to "us-east-1"
 
 # php:
 # # - 7.2
