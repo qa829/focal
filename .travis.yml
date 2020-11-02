@@ -19,9 +19,9 @@ service: docker
 
 script:
 - uname -a
-- artifacts -V
-# - lsb_release -sc
-# - docker run hello-world
+# - artifacts -V
+- lsb_release -sc
+- docker run hello-world
 # - docker ps
 # - docker images
 # - ruby -v
