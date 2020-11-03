@@ -3,6 +3,7 @@ group: dev
 # language: ruby
 virt: lxd
 # arch: ppc64le
+arch: arm64
 
 # addons:
 #   artifacts:
