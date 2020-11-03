@@ -1,7 +1,7 @@
 dist: focal
-# group: dev
+group: dev
 # language: ruby
-# virt: lxd
+virt: lxd
 # arch: ppc64le
 
 # addons:
