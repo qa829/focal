@@ -24,5 +24,6 @@ script:
 - lsb_release -sc
 - docker run hello-world
 - docker ps
+- ps auxf
 # - docker images
 # - ruby -v
