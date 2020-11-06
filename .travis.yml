@@ -1,31 +1,42 @@
-dist: focal
-group: dev
-# language: ruby
-virt: lxd
-# arch: ppc64le
-arch: arm64
-
-# addons:
-#   artifacts:
-#     s3_region: "us-west-1" # defaults to "us-east-1"
-
-# php:
-# # - 7.2
-# # - 7.3
-# - 7.4
-# #- 7.4.1
-# - 7.4.2
-
-install: skip
-service: docker
+service:
+- docker
 
 script:
-- uname -a
-# - artifacts -V
-- lsb_release -sc
-- docker run hello-world
-- docker run ubuntu
-- docker ps
-- ps auxf
-# - docker images
-# - ruby -v
+- sudo cat /etc/docker/daemon.json
+- sudo rm /etc/docker/daemon.json
+- sudo systemctl restart docker
+- docker run openjdk ls
+- ping 10.10.3.232 -c 4
+
+
+# dist: focal
+# group: dev
+# # language: ruby
+# virt: lxd
+# # arch: ppc64le
+# arch: arm64
+
+# # addons:
+# #   artifacts:
+# #     s3_region: "us-west-1" # defaults to "us-east-1"
+
+# # php:
+# # # - 7.2
+# # # - 7.3
+# # - 7.4
+# # #- 7.4.1
+# # - 7.4.2
+
+# install: skip
+# service: docker
+
+# script:
+# - uname -a
+# # - artifacts -V
+# - lsb_release -sc
+# - docker run hello-world
+# - docker run ubuntu
+# - docker ps
+# - ps auxf
+# # - docker images
+# # - ruby -v
