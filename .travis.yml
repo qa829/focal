@@ -6,6 +6,7 @@ script:
 # - sudo rm /etc/docker/daemon.json
 # - sudo systemctl restart docker
 - docker run openjdk ls
+- php -v
 # - ping 10.10.3.232 -c 4
 
 
@@ -20,12 +21,13 @@ script:
 # #   artifacts:
 # #     s3_region: "us-west-1" # defaults to "us-east-1"
 
-# # php:
-# # # - 7.2
-# # # - 7.3
-# # - 7.4
-# # #- 7.4.1
-# # - 7.4.2
+php:
+- 7.2
+- 7.3
+- 7.4
+- 7.4.1
+- 7.4.2
+- 8
 
 # install: skip
 # service: docker
